@@ -1,0 +1,635 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Conteneur principal avec l'image de fond */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles de l'en-tête (Navbar) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5a78f0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5a78f0;
+}
+
+/* Styles de la section Héro */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hello {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #222;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #5a78f0;
+    margin-bottom: 40px;
+}
+
+/* Styles du bouton "Download CV" */
+.btn-download {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #5a78f0;
+    color: #5a78f0;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #5a78f0;
+    color: #fff;
+}
+
+/* Pour les écrans plus petits (Responsive) */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/*
+******************************************
+        STYLE POUR ABOUT
+******************************************
+*/
+:root {
+    --primary-color: #5a78f0;
+    --dark-text: #222;
+    --light-text: #555;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--dark-text);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+.logo span { color: var(--dark-text); }
+
+nav ul { display: flex; list-style: none; gap: 35px; }
+nav ul li a { text-decoration: none; color: var(--dark-text); font-weight: 500; transition: 0.3s; }
+nav ul li a.active, nav ul li a:hover { color: var(--primary-color); }
+
+/* Section About en Grid */
+.about-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 8% 50px 8%;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Texte plus large que l'image */
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Style du texte */
+.about-text h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
+
+/* Style de l'image*/
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit le carré sans se déformer */
+}
+
+/* Bouton primary (Réutilisable) */
+.btn-primary {
+    display: inline-block;
+    padding: 16px 35px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(90, 120, 240, 0.3);
+}
+
+/* Responsive pour Mobile */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr; /* On empile sur mobile */
+        text-align: center;
+    }
+
+    .about-image { order: -1; } /* L'image passe au-dessus du texte sur mobile */
+
+    .about-text h1 { font-size: 2.5rem; }
+}
+
+/*
+******************************************
+           STYLE POUR EDUCATION
+******************************************
+ */
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.2;
+    padding-top: 35px;
+}
+
+/* Timeline Container */
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+/* Academic Cards */
+.edu-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.edu-card:hover {
+    transform: translateX(10px);
+}
+
+/* Highlighted card for the AI Master */
+.edu-card.highlighted {
+    border-left: 5px solid #ff9f43; /* Couleur différente pour attirer l'oeil */
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.edu-header h2 {
+    font-size: 1.4rem;
+    margin: 10px 0 5px 0;
+    color: var(--dark-text);
+}
+
+.edu-header h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.year {
+    font-weight: 700;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.badge {
+    display: inline-block;
+    background: #ff9f43;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+}
+
+/* Module Groups */
+.module-group {
+    margin-top: 15px;
+}
+
+.module-group h4 {
+    font-size: 0.95rem;
+    color: var(--dark-text);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edu-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--light-text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .edu-card:hover { transform: none; }
+    .page-title { font-size: 2rem; }
+}
+
+
+/*
+******************************************
+           STYLE POUR FOOTER
+******************************************
+ */
+/* Main Footer Styles */
+.main-footer {
+    background: rgba(255, 255, 255, 0.5);
+    /*background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+    backdrop-filter: blur(10px);
+    padding: 50px 0 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.footer-logo span {
+    color: var(--dark-text);
+}
+
+/* Social Icons Styling */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-socials a {
+    color: var(--dark-text);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Couleurs au survol pour chaque réseau */
+.footer-socials a:hover {
+    transform: translateY(-5px);
+}
+
+.fa-x-twitter:hover { color: #000000; }
+.fa-instagram:hover { color: #E1306C; }
+.fa-facebook-f:hover { color: #4267B2; }
+.fa-whatsapp:hover { color: #25D366; }
+.fa-telegram-plane:hover { color: #0088cc; }
+
+.footer-info p {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: 10px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.footer-bottom span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+
+/* Layout Awards */
+.awards-section {
+    padding: 0 8% 80px 8%;
+}
+
+.award-category {
+    margin-bottom: 60px;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--primary-color);
+}
+
+/* Featured Award Card */
+.award-card.highlight {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(90, 120, 240, 0.1);
+    border: 2px solid var(--primary-color);
+}
+
+.award-icon i {
+    font-size: 4rem;
+    color: #ff9f43;
+}
+
+/* Scholarship List */
+.scholarship-list .item {
+    background: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.scholarship-list .item:hover {
+    background: white;
+    transform: translateX(10px);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.item-header h4 { font-weight: 600; color: var(--dark-text); }
+.item-header span { font-size: 0.85rem; color: var(--primary-color); font-weight: 700; }
+
+/* Certification Grid */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cert-logo { width: 50px; height: auto; }
+
+.cert-content h4 { font-size: 1.1rem; margin-bottom: 5px; }
+.cert-content ul { padding-left: 20px; font-size: 0.85rem; color: var(--light-text); }
+
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.tags span {
+    background: #f0f2f5;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .award-card.highlight { flex-direction: column; text-align: center; }
+}
+
+
+/*
+******************************************
+           STYLE POUR PORTFOLIO
+******************************************
+ */
+
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 0 8% 100px 8%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 30px; /* Espace entre les projets */
+}
+
+/* Individual Card */
+.project-card {
+    background: #1e1e26; /* Fond sombre comme sur l'image */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Project Image Container */
+.project-image {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay au survol */
+.project-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(90, 120, 240, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project-image:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay a, .confidential {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Info Section (Le style de l'image de référence) */
+.project-info {
+    padding: 25px;
+    border-top: 5px solid #2ecc71; /* La barre verte caractéristique */
+    text-align: center;
+}
+
+.project-info h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    color: #a0a0a8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); } /* 2 colonnes sur tablette */
+}
+
+@media (max-width: 768px) {
+    .projects-grid { grid-template-columns: 1fr; } /* 1 colonne sur mobile */
+}

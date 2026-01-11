@@ -1,0 +1,44 @@
+python : Analyse exploratoire des données
+Jeux Olympiques (1896 - 2016)
+
+donnée sur kaggle : — étudier l’évolution du nombre de participants au fil des éditions, pour ob-
+server la croissance et la popularité croissante des Jeux.
+— analyser la répartition des médailles par pays
+
+*******************************************
+*************************************
+Projet Algorithmic Complexity
+BADXOR - Bad XOR sur SPUJ
+On a choisi un probleme a resoudre sur la SPOJ, on a utilise Python et C++ et un cas pratique societal et voici la description du projet, 
+Taf : - Choisir un problème soit de votre propre expérience, soit de la plateforme SPOJ.
+- Écrire la description complète du problème et imaginer une application ou un cas pratique
+du problème dans la vie réelle.
+-Décrire les éléments de base sur la méthode (approche) utilisée pour résoudre le problème.
+- Écrire l’algorithme en détail pour résoudre le problème et donner une preuve (démons-
+tration théorique) de son exactitude.
+- Analyser clairement la complexité du problème.
+- Écrire un programme pour résoudre le problème.
+- Le langage de programmation choisi est C++, Java et Python.
+- Résoudre le problème sur la plateforme SPOJ pour les problèmes relatifs.
+- Créer un ensemble d’entrées/sorties pour tester votre programme avec au minimum 20
+tests avec des valeurs limites.
+- Présenter votre travail avec des slides (MS PowerPoint, LaTeX...) résumant tout ce qui a
+été demandé ci-dessus.
+
+************************************************
+************************************************
+Projet Graph Theory, Plus court chemin
+Modélisation du projet sous forme de graphe, Chemin critique et durée minimale du projet, Principe de Bellman adapté pour résoudre le problème, Calcul des dates au plus tôt et au plus tard du
+projet, et détermination des tâches critiques,
+
+*****************************************************
+*****************************************************
+Probability Theory - Statistics
+Vous êtes data scientist dans une entreprise spécialisée dans la conception et fabrication de moteurs d’avion civils et militaires. Votre équipe travaille sur la conception d’une pièce critique du moteur, sujette à des itérations fréquentes afin d’optimiser sa performance. Chaque nouvelle conception est testée à travers une expérimentation de performance : deux indicateurs sont mesurés à cette occasion - notés γ₁ et γ₂.
+Le département d’ingénierie souhaite mieux structurer les conceptions passées en identifiant des groupes homogènes de configurations, selon leurs caractéristiques techniques et leurs résultats expérimentaux.
+
+1. Analyse exploratoire univariée et bivariée
+2. Préparation des données pour la classification automatique
+3. Réalisation d’une classification ascendante hiérarchique (CAH)
+4. (Optionnel) Réalisation d’une analyse en composantes (ACP ou ACM)
+5. Interprétation et conclusions
